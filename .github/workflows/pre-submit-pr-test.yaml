@@ -30,11 +30,11 @@ jobs:
           cd tmprepo
           git checkout main
           bash test/sensitive_data.sh
-      # - name: test merge repos question
-      #   run: |
-      #     cd tmprepo
-      #     git checkout main
-      #     cd test
-      #     bash merge_repos.sh
+      - name: test merge repos question
+        run: |
+          cd tmprepo
+          git checkout main
+          cd test
+          bash merge_repos.sh
           
           
